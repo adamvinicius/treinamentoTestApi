@@ -1,0 +1,98 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-12T20:29:49.148Z",
+        "line": 4,
+        "name": "teste api",
+        "description": "",
+        "id": "exemplos-cucumber-api;teste-api",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 474510995,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que acesso o endpoint \"https://jsonplaceholder.typicode.com/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com/posts\"",
+                  "offset": 22
+                }
+              ],
+              "location": "TesteApiSteps.queAcessoOEndpoint(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 129080,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "adiciono o campo \"titulo\" com o valor \"teste titulo\" no objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"titulo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"teste titulo\"",
+                  "offset": 38
+                }
+              ],
+              "location": "TesteApiSteps.adicionoOCampoComOValorNoObjetoJson(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1755385585,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "realizo a requisicao com o objeto json",
+            "match": {
+              "location": "TesteApiSteps.realizoARequisicaoComOObjetoJson()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 304903479,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "recebo o campo \"id\" com o valor 101",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 15
+                },
+                {
+                  "val": "101",
+                  "offset": 32
+                }
+              ],
+              "location": "TesteApiSteps.receboOCampoComOValor(String,Integer)"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "exemplos cucumber api",
+    "description": "",
+    "id": "exemplos-cucumber-api",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/exemploAPI.feature",
+    "tags": []
+  }
+]
