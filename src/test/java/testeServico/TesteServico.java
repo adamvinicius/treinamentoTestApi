@@ -6,9 +6,10 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.http.ContentType;
+import com.jayway.restassured.response.Response;
+
 import suporte.ApiSuporte;
 
 public class TesteServico {
@@ -22,9 +23,11 @@ public class TesteServico {
 
 				.then().statusCode(201).extract().response();
 
-		assertEquals(101, response.getBody().jsonPath().get("id"));
+		
 
 		System.out.println(response.getBody().asString());
+		
+		
 
 	}
 
